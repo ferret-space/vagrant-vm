@@ -1,0 +1,32 @@
+---
+- src: https://git.adesso.ch/ansible/vim
+  scm: git
+  name: vim
+
+- src: https://git.adesso.ch/ansible/jdk
+  scm: git
+  name: jdk
+
+- src: https://git.adesso.ch/ansible/intellij
+  scm: git
+  name: intellij
+
+- src: https://git.adesso.ch/ansible/docker
+  scm: git
+  name: docker
+
+- src: https://git.adesso.ch/ansible/curl
+  scm: git
+  name: curl
+
+- src: https://git.adesso.ch/ansible/chrome
+  scm: git
+  name: chrome
+  
+- src: https://git.adesso.ch/ansible/remove_favorites
+  scm: git
+  name: remove_favorites
+
+- src: https://git.adesso.ch/devops/devops-showcase/ansible-roles/install-openshift-cli
+  scm: git
+  name: install-openshift-cli

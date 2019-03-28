@@ -1,0 +1,17 @@
+- hosts: local
+
+  vars:
+    dest_dir: '/home/{{ ansible_user }}'
+
+  roles:
+  - role: vim
+  - role: jdk
+  - role: curl
+  - role: chrome
+    become: yes
+  - role: remove_favorites
+  - role: intellij
+    dest_folder: '{{ dest_dir }}/Schreibtisch'
+    version_no: '2019.1'
+  - role: docker
+  - role: install-openshift-cli
