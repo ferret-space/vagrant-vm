@@ -11,7 +11,7 @@
   - role: chrome
     become: yes
   - role: maven
-  - role: npm
+  - role: meta
   - role: remove_favorites
   - role: intellij
     dest_folder: '{{ dest_dir }}/Schreibtisch'
@@ -24,5 +24,3 @@
     git_name: 'Denis Pingin'
     git_email: 'denis.pingin@adesso.ch'
   - role: reboot
-
-
