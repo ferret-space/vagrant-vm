@@ -42,3 +42,7 @@
 - src: https://git.adesso.ch/ansible/npm
   scm: git
   name: npm
+
+- src: https://git.adesso.ch/ansible/reboot
+  scm: git
+  name: reboot

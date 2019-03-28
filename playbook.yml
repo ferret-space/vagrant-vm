@@ -23,5 +23,6 @@
     intellij_v: '{{ intellij_version }}'
     git_name: 'Denis Pingin'
     git_email: 'denis.pingin@adesso.ch'
+  - role: reboot
 
 
