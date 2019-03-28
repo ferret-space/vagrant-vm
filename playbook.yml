@@ -2,6 +2,7 @@
 
   vars:
     dest_dir: '/home/{{ ansible_user }}'
+    intellij_version: '2019.1'
 
   roles:
   - role: vim
@@ -12,6 +13,13 @@
   - role: remove_favorites
   - role: intellij
     dest_folder: '{{ dest_dir }}/Schreibtisch'
-    version_no: '2019.1'
+    version_no: '{{ intellij_version }}'
   - role: docker
   - role: install-openshift-cli
+    destination_directory: '{{ dest_dir }}/openshift-cli'
+  - role: customize-vm
+    intellij_v: '{{ intellij_version }}'
+    git_name: 'Denis Pingin'
+    git_email: 'denis.pingin@adesso.ch'
+
+

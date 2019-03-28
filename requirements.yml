@@ -30,3 +30,7 @@
 - src: https://git.adesso.ch/devops/devops-showcase/ansible-roles/install-openshift-cli
   scm: git
   name: install-openshift-cli
+
+- src: https://git.adesso.ch/denis.pingin/customize-vm
+  scm: git
+  name: customize-vm
