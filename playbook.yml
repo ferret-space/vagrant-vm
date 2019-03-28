@@ -10,6 +10,8 @@
   - role: curl
   - role: chrome
     become: yes
+  - role: maven
+  - role: npm
   - role: remove_favorites
   - role: intellij
     dest_folder: '{{ dest_dir }}/Schreibtisch'

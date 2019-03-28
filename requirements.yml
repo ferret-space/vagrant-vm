@@ -34,3 +34,11 @@
 - src: https://git.adesso.ch/denis.pingin/customize-vm
   scm: git
   name: customize-vm
+
+- src: https://git.adesso.ch/ansible/maven
+  scm: git
+  name: maven
+
+- src: https://git.adesso.ch/ansible/npm
+  scm: git
+  name: npm
