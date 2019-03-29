@@ -1,8 +1,8 @@
 - hosts: local
 
   vars:
-    dest_dir: '/home/{{ ansible_user }}'
-    intellij_version: '2019.1'
+    dest_dir: "/home/{{ ansible_user }}"
+    intellij_version: "2019.1"
 
   roles:
   - role: vim
@@ -14,13 +14,19 @@
   - role: meta
   - role: remove_favorites
   - role: intellij
-    dest_folder: '{{ dest_dir }}'
-    version_no: '{{ intellij_version }}'
+    dest_folder: "{{ dest_dir }}"
+    version_no: "{{ intellij_version }}"
   - role: docker
   - role: install-openshift-cli
-    destination_directory: '{{ dest_dir }}/openshift-cli'
+    destination_directory: "{{ dest_dir }}/openshift-cli"
   - role: customize-vm
-    intellij_v: '{{ intellij_version }}'
-    git_name: 'Denis Pingin'
-    git_email: 'denis.pingin@adesso.ch'
+    system_locale: "en_US"
+    keyboard_layout: "de"
+    intellij_v: "{{ intellij_version }}"
+    git_name: "Denis Pingin"
+    git_email: "denis.pingin@adesso.ch"
+    config_git_url: "https://git.adesso.ch/denis.pingin/vm-config"
+    intellij_plugins_git_url: "https://git.adesso.ch/denis.pingin/intellij-plugins"
+    intellij_templates_git_url: "https://git.adesso.ch/denis.pingin/intellij-templates"
+    intellij_codestyles_git_url: "https://git.adesso.ch/denis.pingin/intellij-codestyles"
   - role: reboot
