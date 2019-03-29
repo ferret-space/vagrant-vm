@@ -14,7 +14,7 @@
   - role: meta
   - role: remove_favorites
   - role: intellij
-    dest_folder: '{{ dest_dir }}/Schreibtisch'
+    dest_folder: '{{ dest_dir }}'
     version_no: '{{ intellij_version }}'
   - role: docker
   - role: install-openshift-cli
