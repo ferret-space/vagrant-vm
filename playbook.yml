@@ -17,8 +17,8 @@
     dest_folder: "{{ dest_dir }}"
     version_no: "{{ intellij_version }}"
   - role: docker
-  - role: install-openshift-cli
-    destination_directory: "{{ dest_dir }}/openshift-cli"
+  - role: oc
+    dest_folder: "{{ dest_dir }}/openshift-cli"
   - role: customize-vm
     system_locale: "en_US"
     keyboard_layout: "de"
