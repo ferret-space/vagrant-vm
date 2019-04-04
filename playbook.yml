@@ -19,6 +19,8 @@
   - role: docker
   - role: oc
     dest_folder: "{{ dest_dir }}/openshift-cli"
+  - role: s2i
+    dest_folder: "{{ dest_dir }}/s2i"
   - role: customize-vm
     system_locale: "en_US"
     keyboard_layout: "de"

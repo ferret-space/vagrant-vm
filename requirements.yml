@@ -31,6 +31,10 @@
   scm: git
   name: oc
 
+- src: https://git.adesso.ch/ansible/s2i
+  scm: git
+  name: s2i
+
 - src: https://git.adesso.ch/denis.pingin/customize-vm
   scm: git
   name: customize-vm
